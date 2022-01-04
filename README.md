@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/bpmn-io/properties-panel-persist-layout-example/workflows/CI/badge.svg)](https://github.com/bpmn-io/properties-panel-persist-layout-example/actions?query=workflow%3ACI)
 
-This example uses [bpmn-js](https://github.com/bpmn-io/bpmn-js) and [@bpmn-io/bpmn-js-properties-panel](https://github.com/bpmn-io/bpmn-js-properties-panel). It implements a BPMN 2.0 modeler that persists layout changes in the properties panel via local storage.
+This example uses [bpmn-js](https://github.com/bpmn-io/bpmn-js) and [bpmn-js-properties-panel](https://github.com/bpmn-io/bpmn-js-properties-panel). It implements a BPMN 2.0 modeler that persists layout changes in the properties panel via local storage.
 
 ## About
 
