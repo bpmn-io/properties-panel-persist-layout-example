@@ -40,6 +40,16 @@ modeler.on('propertiesPanel.layoutChanged', (event) => {
 
 If you reload the page, it retrieves the previously persisted configuration again and hooks it into the Modeler.
 
+It is also possible to directly set the properties panel layout, e.g. to reset the default state.
+
+```js
+const eventBus = modeler.get('eventBus');
+
+eventBus.fire('propertiesPanel.updateLayout', {
+  layout: { groups: {} }
+});
+```
+
 Check out the [complete example](./src/app.js) to gather more information.
 
 

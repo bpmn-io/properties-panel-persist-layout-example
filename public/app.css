@@ -30,3 +30,9 @@ html, body {
   width: 300px;
   border-left: solid 1px #cccccc;
 }
+
+.reset-layout {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}

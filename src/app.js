@@ -58,3 +58,14 @@ modeler.importXML(diagramXML)
   .catch(error => {
     console.error(error);
   });
+
+const resetLayoutBtn = document.querySelector('.reset-layout');
+
+resetLayoutBtn.addEventListener('click', () => {
+  const eventBus = modeler.get('eventBus');
+
+  // update the layout state to initial (all groups closed)
+  eventBus.fire('propertiesPanel.updateLayout', {
+    layout: { groups: {} }
+  });
+});

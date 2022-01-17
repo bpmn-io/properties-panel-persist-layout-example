@@ -2,7 +2,8 @@ export function Store() {
   let storage = window.localStorage || {};
 
   this.get = function(key) {
-    return JSON.parse(storage[key]);
+    const storageForyKey = storage[key];
+    return storageForyKey && JSON.parse(storageForyKey);
   };
 
   this.set = function(key, value) {
